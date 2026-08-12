@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: ${DOCKER_IMAGE}:${BUILD_NUMBER}
+        image: asifpsdocker/spring-boot-app:21
         ports:
         - containerPort: 8080
