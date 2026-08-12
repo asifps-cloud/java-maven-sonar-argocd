@@ -2,12 +2,13 @@ pipeline {
   agent any
   environment {
         DOCKER_IMAGE = 'asifpsdocker/spring-boot-app'
+        GIT_USER_NAME = 'asifps-cloud'
     }
   stages {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        //git branch: 'main', url: 'https://github.com/user/repo.git'
+        //git branch: 'main', url: 'https://github.com/asifps-cloud/java-maven-sonar-argocd.git'
       }
     }
     stage('Build and Test') {
