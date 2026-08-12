@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-        DOCKER_IMAGE = 'asifps/spring-boot-app'
+        DOCKER_IMAGE = 'asifpsdocker/spring-boot-app'
     }
   stages {
     stage('Checkout') {
